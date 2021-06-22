@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BloodPressureProblrm">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    >
+
+    <TextView
+        android:id="@+id/noteForBP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Note: Please read carefully"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lbpCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="55dp"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/easyYogaImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_lbp" />
+
+        <TextView
+            android:id="@+id/EasyYogaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="Low Blood Pressure"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hbpCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/lbpCard"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/normalYogaImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_hbp"/>
+
+        <TextView
+            android:id="@+id/normalYogaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="end"
+            android:text="Hight Blood Pressure"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

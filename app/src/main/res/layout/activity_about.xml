@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="@drawable/background">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="35dp"
+    android:text="About"
+    android:gravity="center"
+    android:textColor="#000000"
+    />
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:rowCount="6"
+        android:minHeight="550dp"
+        tools:context=".GridXMLActivity"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginTop="40dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Designer:"
+
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Dhruvkumar Patel"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Content Provider:"
+                android:layout_gravity="center_vertical"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Yash Thumar"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:text="Website Use:"
+
+                android:textSize="24sp"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="https://www.yogajournal.com/"
+                android:padding="4dp"
+                android:textSize="24sp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="#000000"
+                   android:layout_weight="0.5"
+                   android:gravity="center"
+                   android:padding="4dp"
+                   android:text="https://www.artofliving.org/in-en"
+                   android:textSize="24sp"/>
+           </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Music Use:"
+                android:layout_gravity="center_vertical"
+                android:textSize="24sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Meditative"
+                    android:padding="4dp"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="https://soundcloud.com/meditative-mind/hang-drum-tabla-flute-mystical-yoga-music"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Contact:"
+
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="pateldhruv9726@gmail.com"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelaxationMusic"
+    android:id="@+id/l_layout"
+    android:gravity="center"
+    android:background="@drawable/background"
+
+    android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="#04B0FD"/>
+
+    <LinearLayout
+        android:id="@+id/music_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/playMusic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:background="#00FFFFFF"
+            android:onClick="playMusic"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/pauseMusic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:background="#00FFFFFF"
+        android:onClick="pauseMusic"
+        android:src="@android:drawable/ic_media_pause"
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music_layout"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+
+            android:textSize="24dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:layout_marginLeft="60dp"
+            android:paddingLeft="10dp"
+            android:textSize="24dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+

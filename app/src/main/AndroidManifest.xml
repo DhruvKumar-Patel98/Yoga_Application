@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yogaapp">
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YogaApp">
+        <activity android:name=".About"></activity>
+        <activity android:name=".HardYoga" />
+        <activity android:name=".NormalYoga" />
+        <activity android:name=".EasyYoga" />
+        <activity android:name=".RelaxationMusic" />
+        <activity android:name=".HighBloodPressure" />
+        <activity android:name=".LowBloodPressure" />
+        <activity android:name=".BloodPressureProblrm" />
+        <activity android:name=".GastricProblem" />
+        <activity
+            android:name=".Headache"
+            android:label="@string/title_activity_headache"
+            android:theme="@style/Theme.YogaApp.NoActionBar" />
+        <activity android:name=".FaceYoga" />
+        <activity android:name=".BoostImmunity" />
+        <activity android:name=".Derpession" />
+        <activity android:name=".HeartProblem" />
+        <activity android:name=".BackPainProblem" />
+        <activity android:name=".Asthama" />
+        <activity android:name=".AsanDetails" />
+        <activity android:name=".YogaForBeginners" />
+        <activity android:name=".Increase_height" />
+        <activity android:name=".Weight_gain" />
+        <activity android:name=".Weight_loose" />
+        <activity android:name=".Navigation_bar" />
+        <activity android:name=".Body_activity" />
+        <activity android:name=".Pranayam" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:name=".BackgroundSoundService" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

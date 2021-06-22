@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AsanDetails">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="2dp"
+    app:cardBackgroundColor="@color/black">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/asanImage"
+        android:scaleType="centerCrop"/>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/black"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/asanName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:text="asan name"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/asanSteps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:fontFamily="@font/open_sans"
+        android:padding="2dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+</ScrollView>
+
+
+
+</LinearLayout>
