@@ -29,7 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:cardCornerRadius="10dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/noteForBP"
         tools:layout_editor_absoluteX="1dp">
 
         <ImageView
@@ -56,6 +57,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/hbpCard"
+
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="20dp"
